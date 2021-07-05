@@ -1,0 +1,266 @@
+<!DOCTYPE html> <!-- без этого сайт не будет работать -->
+<html>
+
+<head>
+  <meta charset="UTF-8"> <!-- Стандарт кодировки символов -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Чаще всего используют для адаптива сайта -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HouseVOP</title> <!-- Название сайта -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css"> <!-- Подключает CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;800&display=swap&subset=cyrillic"
+    rel="stylesheet"> <!-- Подключает Шрифты -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap&subset=cyrillic"
+    rel="stylesheet"> <!-- Подключает Шрифты -->
+</head>
+
+<!-- Здесь основная часть сайта (всё что будет написано ниже, будет видеть и показывать браузер) -->
+
+<body>
+  <!-- Шапка сайта -->
+  <header class="header">
+    <!-- Контейнер нужен, чтобы задать поля и границы за который основной контент не будет выходить -->
+    <div class="container">
+
+      <div class="header__top">
+        <div class="logo">
+          <!-- a href="#" - это ссылки, которые должны куда-то вести. Сейчас они ведут в никуда из-за знака # -->
+          <a href="#" class="logo logo-link">HouseVOP</a>
+          <!-- div что-то типо коробки, который будет содержать текст или картинку -->
+          <div class="logo-bottom">жилой комплекс</div>
+        </div>
+        <!-- Меню сайта -->
+        <nav class="menu">
+          <!-- Список меню -->
+          <ul class="menu__list">
+
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">О комплексе</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#street">Район</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#room">Каталог квартир</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">Ипотека</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__title">
+        Жилой комплекс <br> в историческом центре
+        <!-- Главный заголовок сайта -->
+      </div>
+      <div class="header__svg">
+        <img src="images/header__mouse.svg" alt="">
+      </div>
+      <div class="header-bottom">
+        <div class="header__address">
+          Наб. реки Фонтанки 10-15
+        </div>
+        <div class="header__telephone">
+          <a href="tel:8 (812) 123-45-67">8 (812) 123-45-67</a> <!-- На этот телефон реально можно позвонить -->
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="apartments">
+    <div class="container">
+      <div class="apartments__header">
+
+        <div class="apartments__advantages">
+          <img class="apartments__image" src="images/park.svg" alt="">
+          <div class="apartments__header-text">
+            Рядом исторические <br> парки и скверы
+          </div>
+        </div>
+
+        <div class="apartments__advantages">
+          <img class="apartments__image" src="images/house.svg" alt="">
+          <div class="apartments__header-text">
+            Полностью <br> обустроенный
+          </div>
+        </div>
+
+        <div class="apartments__advantages">
+          <img class="apartments__image" src="images/fountain.svg" alt="">
+          <div class="apartments__header-text">
+            10 фонтанов <br> на территории
+          </div>
+        </div>
+
+        <div class="apartments__advantages">
+          <img class="apartments__image" src="images/bike.svg" alt="">
+          <div class="apartments__header-text">
+            6 км <br> велодорожек
+          </div>
+        </div>
+
+      </div>
+      <div id="room" class="apartments__body">
+        <h4 class="apartments__title">Наши квартиры</h4>
+        <div class="apartments__inner">
+          <div class="apartments__box">
+            <img class="apartments__box-img" src="images/apartments__box-img--loft_1.jpg" alt="">
+            <div class="apartments__box-title">Лофт - 3 этаж</div>
+          </div>
+          <div class="apartments__box">
+            <img class="apartments__box-img" src="images/apartments__box-img--loft_2.jpg" alt="">
+            <div class="apartments__box-title">Лофт - 2 этаж</div>
+          </div>
+          <div class="apartments__box">
+            <img class="apartments__box-img" src="images/apartments__box-img--loft__3.jpg" alt="">
+            <div class="apartments__box-title">Лофт - 1 этаж</div>
+          </div>
+          <div class="apartments__box">
+            <img class="apartments__box-img" src="images/apartments__box-img--loft__4.jpg" alt="">
+            <div class="apartments__box-title">Лофт - 4 этаж</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="form">
+    <div class="form__bg">
+      <div class="container">
+        <div class="form__title">
+          Хотите посмотреть?
+        </div>
+        <form action="" class="form__inner">
+          <input class="contacts" type="text" placeholder="Ваше имя">
+          <input class="contacts" type="tel" pattern="8[0-9]{10}" placeholder="Ваш телефон">
+          <button class="button" type="submit">Посмотреть район</button>
+          <div class="small__text">
+            *Мы никому не передаем ваши данные.
+            И не сохраняем ваш номер в базу.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <section class="video__box">
+    <div class="video__inner">
+      <video class="video__media" src="video/video__bg.mp4" autoplay muted loop></video>
+    </div>
+  </section>
+  <section id="street" class="maps__box">
+    <div class="container">
+      <div class="maps__title">Район на карте</div>
+      <div class="maps__inner">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3664.7949785181736!2d30.33703749520484!3d59.94469075770884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696317353b89bb9%3A0x4a5baf20e1544c1b!2z0L3QsNCx0LXRgNC10LbQvdCw0Y8g0YDQtdC60Lgg0KTQvtC90YLQsNC90LrQuCwgMTAsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODc!5e0!3m2!1sru!2sru!4v1591274637455!5m2!1sru!2sru"
+          width="1110" height="358" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+          tabindex="0"></iframe>
+      </div>
+      <div class="questions__bottom">
+        <div class="questions__title">
+          Есть вопросы?
+        </div>
+        <form action="" class="questions__inner">
+          <input class="contacts" type="text" placeholder="Ваше имя">
+          <input class="contacts" type="tel" pattern="8[0-9]{10}" placeholder="Ваш телефон">
+          <button class="button" type="submit">Связаться с нами</button>
+          <div class="small__text">
+            *Мы никому не передаем ваши данные.
+            И не сохраняем ваш номер в базу.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="logo">
+        <div class="logo logo-link">HouseVOP</div>
+        <div class="logo-bottom">жилой комплекс</div>
+      </div>
+      <div class="footer__container">
+        <nav class="footer__menu">
+          <ul class="footer__menu-list">
+
+            <li class="footer__list footer__menu-list--item">
+              <a class="menu__list-link" href="#">О комплексе</a>
+            </li>
+            <li class="footer__list footer__menu-list--item">
+              <a class="menu__list-link" href="#street">Район</a>
+            </li>
+            <li class="footer__list footer__menu-list--item">
+              <a class="menu__list-link" href="#room">Каталог квартир</a>
+            </li>
+            <li class="footer__list footer__menu-list--item">
+              <a class="menu__list-link" href="#">Ипотека</a>
+            </li>
+            <li class="footer__list footer__menu-list--item">
+              <a class="menu__list-link" href="#">Контакты</a>
+            </li>
+
+          </ul>
+        </nav>
+        <nav class="footer__menu">
+          <ul class="footer__menu-list">
+
+            <li class="footer__list footer__menu-list--item">
+              <a class="menu__list-link" href="#">О нас</a>
+            </li>
+            <li class="footer__list footer__menu-list--item">
+              <a class="menu__list-link" href="#">Отзывы</a>
+            </li>
+            <li class="footer__list footer__menu-list--item">
+              <a class="menu__list-link" href="#">Новости</a>
+            </li>
+            <li class="footer__list footer__menu-list--item">
+              <a class="menu__list-link" href="#">Апартаменты</a>
+            </li>
+            <li class="footer__list footer__menu-list--item">
+              <a class="menu__list-link" href="#">Цены</a>
+            </li>
+
+          </ul>
+        </nav>
+        <div class="footer__contacts">
+          <ul class="footer__contacts-list">
+
+            <li class="footer__menu-list--item">
+              <a href="#" class="menu__list-link">Адрес: Наб. реки Фонтанки 10-15</a>
+            </li>
+            <li class="footer__menu-list--item">
+              <a href="#" class="menu__list-link">Телефон: 8 (812) 123-45-67</a>
+            </li>
+            <li class="footer__menu-list--item">
+              <a href="#" class="menu__list-link">Отдел продаж: 10:00 - 20:00</a>
+            </li>
+            <li class="footer__menu-list--item">
+              <a href="#" class="menu__list-link">E-mail: vip@housevip.ru</a>
+            </li>
+
+          </ul>
+          <div class="social__network-list">
+            <div class="social__network">
+              <img src="images/footer__youtube.svg" alt="">
+            </div>
+            <div class="social__network">
+              <img src="images/footer__vk.svg" alt="">
+            </div>
+            <div class="social__network">
+              <img src="images/footer__fbook.svg" alt="">
+            </div>
+            <div class="social__network">
+              <img src="images/footer__instagram.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!-- Подключает jQuery -->
+  <script src="js/main.js"></script> <!-- Подключает JavaScript -->
+</body>
+
+</html>
